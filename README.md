@@ -1,37 +1,13 @@
-# Resource Fiesta Template
+# Systems Gov Resources
 
-Welcome to the **Resource Fiesta Template**, a repository template for collaboratively indexing and organizing interesting resources, such as academic papers, blog posts, articles, video playlists, and other general links. Great for collaborative research efforts, whether you're a student, academic, or part of a knowledge-sharing community!
+This repository is a collaborative resource hub for Systems Governance, AI, Cryptography, and Cybersecurity. It's designed to support learning, collaboration, and exploration for COMP60721 Systems Governance 2024/25.
 
-## How to Use This Template
+## How to Contribute
 
-1. **Create a New Repository**:
-   - Click the **"Use this template"** button at the top of this repository on GitHub.
-   - Name your repository and clone it to your local machine.
+1. Add resources to the appropriate category in the `bookmarks/` directory.
+2. Submit a pull request with your additions.
+3. Resources will be validated and merged.
 
-2. **Organize Your Resources**:
-   - Add new links to the appropriate files in the `bookmarks/` directory.
-   - Example: Add academic papers to `bookmarks/academic/` or create a new category in `bookmarks/`.
+## License
 
-3. **Collaborate with Others**:
-   - Use the included issue and pull request templates for contributions.
-   - Review and curate submissions to maintain quality.
-
-## Features
-
-- **Predefined categories**: Start organizing resources right away with dedicated folders for academic papers, blog posts, articles, videos, and more.
-- **Contribution guidelines**: Clear rules and examples to streamline collaboration and maintain high-quality submissions.
-- **GitHub Actions workflow**: Automates link validation to ensure resources remain accessible.
-- **Example scripts**: Includes scripts for managing and validating resources.
-
-## Repository Structure
-
-```plaintext
-/
-├── bookmarks/
-│   ├── academic/
-│   ├── blog-posts/
-│   ├── articles/
-│   ├── videos/
-│   └── general/
-├── scripts/
-└── .github/
+This repository is licensed under the [MIT License](LICENSE).
