@@ -40,10 +40,10 @@ print(f"Processing issue #{issue.number}: {issue.title}")
 
 # Extract details from the issue body
 body = issue.body
-title_match = re.search(r"## Resource Title\s*<!--.*-->\s*(.+)", body)
-url_match = re.search(r"## URL\s*<!--.*-->\s*(.+)", body)
-description_match = re.search(r"## Description\s*<!--.*-->\s*(.+)", body)
-category_match = re.search(r"## Category\s*<!--.*-->\s*(.+)", body)
+title_match = re.search(r"## Resource Title\s*(?:<!--.*-->)?\s*(.+)", body)
+url_match = re.search(r"## URL\s*(?:<!--.*-->)?\s*(.+)", body)
+description_match = re.search(r"## Description\s*(?:<!--.*-->)?\s*(.+)", body)
+category_match = re.search(r"## Category\s*(?:<!--.*-->)?\s*(.+)", body)
 
 print(f"Issue Body:\n{body}")
 print(f"Title Match: '{title_match.group(1) if title_match else 'Not Found'}'")
