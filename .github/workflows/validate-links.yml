@@ -1,0 +1,19 @@
+name: Validate Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Link Checker
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          config-file: mlc_config.json
+          use-quiet-mode: 'yes'
+          ref: 03e6c5c8a5fa778aa3f60c3d9db14df7f90f349f
