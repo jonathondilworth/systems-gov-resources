@@ -1,0 +1,1 @@
+- [Zero trust architecture design principles](https://www.ncsc.gov.uk/collection/zero-trust-architecture) - Eight principles to help you to implement your own zero trust network architecture in an enterprise environment.
