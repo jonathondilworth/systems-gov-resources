@@ -19,18 +19,27 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Debug Installed Packages
+        run: pip list
+
       - name: Parse Issue and Update Bookmarks
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python .github/scripts/process_resource_issue.py
+        run: python .github/scripts/process_resource_issue.py
 
       - name: Commit and Push Changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add bookmarks/
-          git commit -m "Add resource from issue #${{ github.event.issue.number }}"
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            git add bookmarks/
+            git commit -m "Add resource from issue #${{ github.event.issue.number }}"
+            git push
+          else
+            echo "No changes to commit."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
