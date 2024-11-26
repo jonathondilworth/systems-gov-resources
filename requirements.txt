@@ -1,22 +1,22 @@
-Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1725267563793/work
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
-cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1725560577695/work
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1728479282467/work
-cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography-split_1729286780631/work
-Deprecated @ file:///home/conda/feedstock_root/build_artifacts/deprecated_1731836826792/work
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
+Brotli
+certifi
+cffi
+charset-normalizer
+cryptography
+Deprecated
+h2
 hpack==4.0.0
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1726459485162/work
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
-PyGithub @ file:///home/conda/feedstock_root/build_artifacts/pygithub_1730939050081/work
-PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1731859197271/work
-PyNaCl @ file:///Users/runner/miniforge3/conda-bld/pynacl_1725739290967/work
-PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1731919281354/work
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1717057054362/work
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1726496430923/work
-wrapt @ file:///Users/runner/miniforge3/conda-bld/wrapt_1732523654260/work
+hyperframe
+idna
+pycparser
+PyGithub
+PyJWT
+PyNaCl
+PySocks
+python-dateutil
+requests
+six
+typing_extensions
+urllib3
+wrapt
 zstandard==0.23.0
