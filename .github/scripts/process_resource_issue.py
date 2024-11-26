@@ -45,6 +45,12 @@ url_match = re.search(r"## URL\s*<!--.*-->\s*(.+)", body)
 description_match = re.search(r"## Description\s*<!--.*-->\s*(.+)", body)
 category_match = re.search(r"## Category\s*<!--.*-->\s*(.+)", body)
 
+print(f"Issue Body:\n{body}")
+print(f"Title Match: '{title_match.group(1) if title_match else 'Not Found'}'")
+print(f"URL Match: '{url_match.group(1) if url_match else 'Not Found'}'")
+print(f"Description Match: '{description_match.group(1) if description_match else 'Not Found'}'")
+print(f"Category Match: '{category_match.group(1) if category_match else 'Not Found'}'")
+
 if not (title_match and url_match and description_match and category_match):
     print("Error: Missing required fields in the issue.")
     exit(1)
