@@ -2,15 +2,29 @@ import os
 import re
 from github import Github
 
-# Initialize GitHub API client
+# Retrieve the GitHub token from the environment
 token = os.getenv('GITHUB_TOKEN')
+if not token:
+    print("Error: GITHUB_TOKEN is not set.")
+    exit(1)
+
+# Retrieve the repository name from the environment
 repo_name = os.getenv('GITHUB_REPOSITORY')
+if not repo_name:
+    print("Error: GITHUB_REPOSITORY is not set.")
+    exit(1)
+
+# Initialize GitHub API client
 g = Github(token)
 repo = g.get_repo(repo_name)
 
 # Fetch the issue that triggered the workflow
-issue_number = os.getenv('GITHUB_EVENT_PATH')
-with open(issue_number, 'r') as f:
+event_path = os.getenv('GITHUB_EVENT_PATH')
+if not event_path:
+    print("Error: GITHUB_EVENT_PATH is not set.")
+    exit(1)
+
+with open(event_path, 'r') as f:
     event = eval(f.read())
 issue = repo.get_issue(event['issue']['number'])
 
